@@ -17,6 +17,7 @@ const listRef = document.querySelector('.gallery');
 console.log(listRef);
 const listGallary = images.map(({ url, alt }) => {
   // const itamEl = document.createElement('li');
+  // itamEl.classList.add('gallery__itam');
   // const imgEl = document.createElement('img');
   // imgEl.src = url;
   // imgEl.alt = alt;
@@ -24,7 +25,9 @@ const listGallary = images.map(({ url, alt }) => {
   // itamEl.append(imgEl);
   // listRef.append(itamEl);
   // return listRef;
-  return `<li style = 'display: flex; flex-direction: column;align-items: center; margin: 20px;'><img src="${url}" alt="${alt}" width ='700'></li>`;
+
+  // return `<li style = 'display: flex; flex-direction: column;align-items: center; margin: 20px;'><img src="${url}" alt="${alt}" width ='700'></li>`;
+  return `<li class="gallery__itam"><img src="${url}" alt="${alt}" width ='700'></li>`;
 });
 
 let markup = listGallary.join('');

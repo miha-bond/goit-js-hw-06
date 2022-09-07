@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+.gallery__itam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.gallery__itam:last-child {
+  margin-bottom: 0;
+}
