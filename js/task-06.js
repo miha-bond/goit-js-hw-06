@@ -1,3 +1,7 @@
+const inputRef = document.querySelector('#validation-input');
+
+console.log(inputRef);
+
 //! Напиши скрипт, який під час втрати фокусу на інпуті (подія blur), перевіряє його вміст щодо правильної кількості введених символів.
 
 //*     <input
