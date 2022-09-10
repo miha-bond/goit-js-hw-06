@@ -1,11 +1,11 @@
 const refs = {
   body: document.querySelector('body'),
-  colorText: document.querySelector('.color'),
+  colorName: document.querySelector('.color'),
   btn: document.querySelector('.change-color'),
 };
 refs.btn.addEventListener('click', () => {
   refs.body.style.backgroundColor = getRandomHexColor();
-  refs.colorText.textContent = getRandomHexColor();
+  refs.colorName.textContent = getRandomHexColor();
 });
 
 function getRandomHexColor() {
