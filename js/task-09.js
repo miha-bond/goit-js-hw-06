@@ -1,9 +1,12 @@
-const refsEl = {
+const refs = {
   body: document.querySelector('body'),
-  color: document.querySelector('.color'),
+  colorText: document.querySelector('.color'),
   btn: document.querySelector('.change-color'),
 };
-refsEl.btn.addEventListener('click', () => {});
+refs.btn.addEventListener('click', () => {
+  refs.body.style.backgroundColor = getRandomHexColor();
+  refs.colorText.textContent = getRandomHexColor();
+});
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
