@@ -1,12 +1,14 @@
-const inputRef = document.querySelector('#name-input');
-const outputRef = document.querySelector('#name-output');
+const ref = {
+  input: document.querySelector('#name-input'),
+  output: document.querySelector('#name-output'),
+};
 
 const changeNameOutput = event => {
   const { value } = event.target;
-  outputRef.textContent = value ? value : 'Anonymous';
+  ref.output.textContent = value ? value : 'Anonymous';
 };
 
-inputRef.addEventListener('input', changeNameOutput);
+ref.input.addEventListener('input', changeNameOutput);
 
 //! Напиши скрипт, який під час набору тексту в інпуті input#name-input (подія input), підставляє його поточне значення в span#name-output. Якщо інпут порожній, у спані повинен відображатися рядок "Anonymous".
 
