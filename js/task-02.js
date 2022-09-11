@@ -12,8 +12,9 @@ const itemList = ingredients.map(ingredient => {
   const itemEl = document.createElement('li');
   itemEl.classList.add('item');
   itemEl.textContent = ingredient;
-  listRef.append(itemEl);
+  return itemEl;
 });
+listRef.append(...itemList);
 
 console.log(listRef);
 
