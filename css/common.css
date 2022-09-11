@@ -32,3 +32,14 @@ button {
 .gallery__itam:last-child {
   margin-bottom: 0;
 }
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.box__itam {
+  margin-right: 15px;
+}
+.box__itam:last-child {
+  margin-right: 0;
+}
