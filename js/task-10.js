@@ -7,7 +7,12 @@ const refs = {
 
 refs.btnCreate.addEventListener('click', createEl);
 refs.btnDestroy.addEventListener('click', () => {
-  efs.divBoxes.remove('div');
+  const markupTab = [];
+  {
+    const markupEl = `<div></div>`;
+    markupTab.push(markupEl);
+  }
+  refs.divBoxes.innerHTML = markupTab.join('');
 });
 refs.inputNu.addEventListener('input', event => {
   event.currentTarget.value;
